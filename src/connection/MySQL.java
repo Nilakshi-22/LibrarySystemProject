@@ -14,7 +14,7 @@ public static void createConnection(){
         if (connection == null) {
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/pharmacy_system","root","Nilakshi@22");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/page_turners","root","Nilakshi@22");
         }
     } catch (Exception e) {
         e.printStackTrace();

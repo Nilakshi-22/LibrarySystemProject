@@ -1,4 +1,4 @@
-package Validation;
+package validation;
 
 public enum Validation {  //public final class Validation{}
     VALIDATE_EMAIL{
