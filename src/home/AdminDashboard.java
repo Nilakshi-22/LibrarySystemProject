@@ -4,7 +4,7 @@ import book.BookMain;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import employee.EmployeeMain;
-import gui.InventoryMenu;
+import inventoryManagement.InventoryMenu;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Point;
