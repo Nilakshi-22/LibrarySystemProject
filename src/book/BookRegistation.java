@@ -26,6 +26,21 @@ public class BookRegistation extends javax.swing.JFrame {
      public void setCategoty(String name) {
         jTextField3.setText(name);
     }
+    
+    //........**Publisher**.................//
+    
+     private String PublisherId;
+
+    public void setPublisherId(String PublisherId) {
+        this.PublisherId = PublisherId;
+    }     
+     
+    public void setPublisher(String Publisher) {
+        jTextField4.setText(Publisher);
+    } 
+    
+    //........**Publisher**.................//
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -195,7 +210,8 @@ public class BookRegistation extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+         AuthorView av = new AuthorView(this, true);
+        av.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
@@ -203,12 +219,13 @@ public class BookRegistation extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel12MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        BookCategory bc = new BookCategory(this, true);
-        bc.setVisible(true);
+        Publisher pb = new Publisher(this, true);
+        pb.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+         BookCategory bc = new BookCategory(this, true);
+        bc.setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     /**

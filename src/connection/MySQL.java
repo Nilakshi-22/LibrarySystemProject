@@ -29,7 +29,7 @@ public static ResultSet executeSearch(String query) throws Exception{
 
 }
 
-public static Integer executeNINUPDE(String query) throws Exception{
+public static Integer executeINUPDE(String query) throws Exception{
 
     createConnection();
     return connection.createStatement().executeUpdate(query);
